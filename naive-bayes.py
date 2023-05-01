@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Sep  8 16:02:00 2019
+Created on may 1 16:02:00 2023
 
-@author: marco
+@author: Felippe
 """
 
 ################## Classificação com Naive Bayes ################## 
