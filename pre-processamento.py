@@ -64,7 +64,7 @@ cols_classe = ['cut']
 previsores = base[cols_previsores]
 classe = base[cols_classe]
 
-# Transforma as variáveis categóricas em valores numéricos   
+# Transforma as variáveis categóricas em valores numéricos     
 from sklearn.preprocessing import LabelEncoder
 labelencoder_previsores = LabelEncoder()
 # previsores.loc[:, 'color'] = labelencoder_previsores.fit_transform(previsores.loc[:, 'color'])
