@@ -89,6 +89,9 @@ labelencoder_cut.fit(categorias)
 classe.loc[:, 'cut'] = labelencoder_cut.transform(classe.loc[:, 'cut'])
 del categorias
 
+bins = [-1, 1, 3, 4.1]
+labels = ["Fair", "Good", "Ideal"]
+classe["cut"] = pd.cut(classe["cut"], bins=bins, labels=labels)
 
 
 # Criando variáveis dummy para categoricas nominais
