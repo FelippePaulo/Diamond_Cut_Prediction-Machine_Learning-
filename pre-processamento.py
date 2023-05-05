@@ -89,9 +89,16 @@ labelencoder_cut.fit(categorias)
 classe.loc[:, 'cut'] = labelencoder_cut.transform(classe.loc[:, 'cut'])
 del categorias
 
-bins = [-1, 1, 3, 4.1]
-labels = ["Fair", "Good", "Ideal"]
+bins = [-1, 1, 2, 3, 4.1]
+labels = ["Fair", "Good","Very good", "Ideal"]
 classe["cut"] = pd.cut(classe["cut"], bins=bins, labels=labels)
+classe.loc[:,"cut"] = labelencoder_cut.fit_transform(classe.loc[:,"cut"])
+
+# labelencoder_cut = LabelEncoder()
+# categorias = ["Fair","Good","Very Good","Ideal"]
+# labelencoder_cut.fit(categorias)
+# classe.loc[:, 'cut'] = labelencoder_cut.transform(classe.loc[:, 'cut'])
+# del categorias
 
 
 # Criando variáveis dummy para categoricas nominais
@@ -123,4 +130,4 @@ from sklearn.model_selection import train_test_split
 previsores_treinamento, previsores_teste, classe_treinamento, classe_teste = train_test_split(previsores, classe, test_size=0.25, random_state=0)
 
 
-#####################################################################
+# #####################################################################

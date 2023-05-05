@@ -1,3 +1,10 @@
 digraph Tree {
 node [shape=box, style="filled", color="black", fontname="helvetica"] ;
 edge [fontname="helvetica"] ;
+0 [label="table <= -0.182\nsamples = 40455\nvalue = [4888, 16226, 9039, 10302]\nclass = good", fillcolor="#dbfad8"] ;
+1 [label="depth <= 0.908\nsamples = 22343\nvalue = [1920, 15308, 3849, 1266]\nclass = good", fillcolor="#8def84"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 19341\nvalue = [133, 15254, 2688, 1266]\nclass = good", fillcolor="#74eb6a"] ;
+1 -> 2 ;
+3 [label="samples = 3002\nvalue = [1787, 54, 1161, 0]\nclass = bad", fillcolor="#f6d4bc"] ;
+1 -> 3 ;

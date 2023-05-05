@@ -13,7 +13,7 @@ training_accuracy = []
 test_accuracy = []
 
 # tentando diferentes valores de K: de 1 a 50
-k = range(1,21)
+k = range(1,11)
 for i in k:
     # Construir o modelo
     classificador = KNeighborsClassifier(n_neighbors=i, metric='minkowski', p=2)
