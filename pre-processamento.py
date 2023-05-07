@@ -120,10 +120,10 @@ cols_previsores = previsores.columns
 
 
 # Padronização dos dados
-from sklearn.preprocessing import StandardScaler
+# from sklearn.preprocessing import StandardScaler
 
-scaler = StandardScaler()
-previsores = scaler.fit_transform(previsores)
+# scaler = StandardScaler()
+# previsores = scaler.fit_transform(previsores)
 
 # Separando em base de testes e treinamento (usando 25% para teste)
 from sklearn.model_selection import train_test_split

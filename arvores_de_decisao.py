@@ -33,7 +33,7 @@ matriz_treinamento = confusion_matrix(classe_treinamento, previsoes_treinamento)
 
 # Exportando a árvore para fazer figura
 from sklearn.tree import export_graphviz
-export_graphviz(classificador,out_file="tree.dot",class_names=["bad","good"],
+export_graphviz(classificador,out_file="tree.dot",class_names=["bad","good","3","4"],
                 feature_names=cols_previsores, impurity=False, filled=True)
 
 # Visualizando a árvore
