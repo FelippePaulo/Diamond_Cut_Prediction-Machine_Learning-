@@ -12,9 +12,9 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 classificador = RandomForestClassifier(n_estimators=11,
-                                       max_features=5,
+                                       max_features=9,
                                        criterion='gini',
-                                       max_depth=3,
+                                       max_depth=8,
                                        random_state=0)
 
 # Treinamento

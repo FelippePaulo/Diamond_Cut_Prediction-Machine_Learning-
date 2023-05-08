@@ -11,7 +11,7 @@ import pandas as pd
 
 # Geração da árvore
 from sklearn.tree import DecisionTreeClassifier
-classificador = DecisionTreeClassifier(max_depth=2,
+classificador = DecisionTreeClassifier(max_depth=8,
                                        criterion='entropy', 
                                        random_state=0)
 

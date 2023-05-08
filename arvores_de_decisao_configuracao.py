@@ -12,7 +12,7 @@ training_accuracy = []
 test_accuracy = []
 
 # tentando diferentes valores de K: de 1 a 20
-h = range(1,21)
+h = range(1,31)
 for i in h:
     # Construir o modelo
     classificador = DecisionTreeClassifier(max_depth=i,

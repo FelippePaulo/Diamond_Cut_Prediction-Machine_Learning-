@@ -67,7 +67,7 @@ classe = base[cols_classe]
 # Transforma as variáveis categóricas em valores numéricos     
 from sklearn.preprocessing import LabelEncoder
 labelencoder_previsores = LabelEncoder()
-#previsores.loc[:, 'color'] = labelencoder_previsores.fit_transform(previsores.loc[:, 'color'])
+previsores.loc[:, 'color'] = labelencoder_previsores.fit_transform(previsores.loc[:, 'color'])
 previsores.loc[:, 'clarity'] = labelencoder_previsores.fit_transform(previsores.loc[:, 'clarity'])
 
 #traducao para clarity
@@ -108,12 +108,12 @@ labelbinarizer = LabelBinarizer()
 #dummy para variavel color
 
 #  Variável color
-variaveis_dummy = labelbinarizer.fit_transform(previsores['color'])
-novas_variaveis_dummy = labelbinarizer.classes_
-df_variaveis_dummy = pd.DataFrame(variaveis_dummy, columns=labelbinarizer.classes_)
-# trocando variavel antiga pelas novas variaveis com previsores
-previsores=previsores.join(df_variaveis_dummy)
-previsores=previsores.drop('color', axis=1)
+# variaveis_dummy = labelbinarizer.fit_transform(previsores['color'])
+# novas_variaveis_dummy = labelbinarizer.classes_
+# df_variaveis_dummy = pd.DataFrame(variaveis_dummy, columns=labelbinarizer.classes_)
+# # trocando variavel antiga pelas novas variaveis com previsores
+# previsores=previsores.join(df_variaveis_dummy)
+# previsores=previsores.drop('color', axis=1)
 
 
 

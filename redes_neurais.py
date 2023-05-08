@@ -14,7 +14,7 @@ from sklearn.neural_network import MLPClassifier
 classificador = MLPClassifier(verbose = True,
                               max_iter=1000,
                               tol = 0.000001,
-                              solver = 'sgd',
+                              solver = 'lbfgs',
                               hidden_layer_sizes = [10],
                               activation = 'relu',
                               random_state = 1)
