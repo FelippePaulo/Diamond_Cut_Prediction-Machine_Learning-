@@ -14,7 +14,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 #  n_neighbors é o valor de K
 # Minkowski com p=2 é a distancia euclidiana
-classificador = KNeighborsClassifier(n_neighbors = 50, metric='minkowski', p=2)
+classificador = KNeighborsClassifier(n_neighbors = 20, metric='minkowski', p=2)
 
 # Treinamento
 classificador.fit(previsores_treinamento, classe_treinamento)

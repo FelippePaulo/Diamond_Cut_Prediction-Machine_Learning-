@@ -11,7 +11,7 @@ from sklearn.tree import DecisionTreeClassifier
 training_accuracy = []
 test_accuracy = []
 
-# tentando diferentes valores de K: de 1 a 20
+# tentando diferentes valores de K: de 1 a 30
 h = range(1,31)
 for i in h:
     # Construir o modelo

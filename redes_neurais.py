@@ -15,7 +15,7 @@ classificador = MLPClassifier(verbose = True,
                               max_iter=1000,
                               tol = 0.000001,
                               solver = 'lbfgs',
-                              hidden_layer_sizes = [10],
+                              hidden_layer_sizes = [10,10,10],
                               activation = 'relu',
                               random_state = 1)
 classificador.fit(previsores_treinamento, classe_treinamento)
